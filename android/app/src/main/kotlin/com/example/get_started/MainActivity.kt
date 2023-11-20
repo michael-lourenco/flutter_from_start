@@ -1,4 +1,4 @@
-package com.example.get_started
+package com.ktp.get_started
 
 import io.flutter.embedding.android.FlutterActivity
 
