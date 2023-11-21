@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
 
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
-  
 
   void getNext() {
     current = WordPair.random();
@@ -51,7 +50,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
     var pair = appState.current;
-    
+
     IconData icon;
     if (appState.favorites.contains(pair)) {
       icon = Icons.favorite;
@@ -102,7 +101,7 @@ class BigCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context); 
+    final theme = Theme.of(context);
     final style = theme.textTheme.displayMedium!.copyWith(
       color: theme.colorScheme.onPrimary,
     );
